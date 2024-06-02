@@ -1,9 +1,11 @@
 services:
   gateway:
     build: services/gateway
+    container_name: gateway
     ports: 
       - "3000:3000"
   blob:
     build: services/blob
+    container_name: blob
     ports: 
       - "3001:3001"
