@@ -3,3 +3,7 @@ services:
     build: services/gateway
     ports: 
       - "3000:3000"
+  blob:
+    build: services/blob
+    ports: 
+      - "3001:3001"
